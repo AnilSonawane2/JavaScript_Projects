@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled />
+        <br/>
+        <button id="ac" class="operator" onclick="Clear()">AC</button> 
+        <button id="de" class="operator" onclick="Back('<-')">DE</button> 
+        <button id="." class="operator" onclick="Solve('.')">.</button> 
+        <button id="/" class="operator" onclick="Solve('/')">/</button> 
+        <br/>
+        <button id="7" onclick="Solve('7')">7</button> 
+        <button id="8" onclick="Solve('8')">8</button> 
+        <button id="9" onclick="Solve('9')">9</button> 
+        <button id="*" class="operator" onclick="Solve('*')">*</button> 
+        <br>
+        <button id="4" onclick="Solve('4')">4</button>
+        <button id="5" onclick="Solve('5')">5</button>
+        <button id="6" onclick="Solve('6')">6</button>
+        <button id="-" class="operator" onclick="Solve('-')">-</button>
+        <br>
+        <button id="1" onclick="Solve('1')">1</button>
+        <button id="2" onclick="Solve('2')">2</button>
+        <button id="3" onclick="Solve('3')">3</button>
+        <button id="+" class="operator" onclick="Solve('+')">+</button>
+        <br>
+        <!--<button id="00"></button>-->
+        <button id="0" onclick="Solve('0')" >0</button>
+        <button id="=" class="equal operator" onclick="Result()">=</button>
+        <button id="%" class="operator" onclick="Solve('%')">%</button>
+        <br>
+    </div>
+    
+</body>
+</html>
